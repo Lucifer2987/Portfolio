@@ -545,6 +545,17 @@ h6,
     gap: 2rem;
 }
 
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .project-card h3 {
     color: var(--accent-1);
     margin-bottom: 1rem;
@@ -553,6 +564,11 @@ h6,
 
 .project-card p {
     color: var(--text-secondary);
+}
+
+.project-content .btn {
+    margin-top: auto;
+    align-self: flex-start;
 }
 
 /* Project Metrics Strip */

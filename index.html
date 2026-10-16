@@ -97,6 +97,7 @@
                     <span>NumPy</span>
                     <span>Matplotlib</span>
                     <span>Seaborn</span>
+                    <span>Plotly</span>
                 </div>
             </div>
             <div class="skill-category glass-card reveal">
@@ -108,15 +109,17 @@
                     <span>PyTorch</span>
                     <span>spaCy</span>
                     <span>LangChain</span>
-                    <span>Transfer Learning</span>
+                    <span>LangGraph</span>
                     <span>LLM / RAG</span>
+                    <span>Vector DB</span>
+                    <span>Model Context Protocol (MCP)</span>
+                    <span>Agentic Workflows</span>
                     <span>Deep Learning</span>
                     <span>Neural Networks</span>
                     <span>NLP</span>
                     <span>Generative AI</span>
                     <span>Computer Vision</span>
-                    <span>Feature Engineering</span>
-                    <span>Predictive Modeling</span>
+
                 </div>
             </div>
             <div class="skill-category glass-card reveal">
@@ -135,6 +138,8 @@
             <div class="skill-category glass-card reveal">
                 <h3><i class="fas fa-tools"></i> Tools & Processes</h3>
                 <div class="skill-tags">
+                    <span>Ollama</span>
+                    <span>Streamlit</span>
                     <span>OpenCV</span>
                     <span>HuggingFace</span>
                     <span>MLflow</span>
@@ -205,14 +210,74 @@
         <div class="projects-grid">
             <div class="project-card glass-card glow-on-hover reveal">
                 <div class="project-content">
-                    <h3>Multi_Class_Animal_Classification</h3>
-                    <p>A machine learning project focused on classifying multiple animal species using advanced modeling
-                        and data processing techniques.</p>
-                    <div class="skill-tags" style="margin: 1.5rem 0;">
-                        <span><i class="fab fa-python"></i> Jupyter Notebook</span>
+                    <h3>📚 Docsy — Grounded Multi-PDF RAG Assistant</h3>
+                    <p>High-performance Retrieval-Augmented Generation (RAG) assistant designed to ingest, index, and query multiple PDF documents simultaneously. Enforces strict anti-hallucination guardrails, page-level deduplicated citations, and sub-second token generation powered by Groq LPUs.</p>
+                    <div class="project-metrics">
+                        <div class="metric-chip metric-live"><i class="fas fa-check-circle"></i> 69 Tests (100% Mocked)</div>
+                        <div class="metric-chip metric-accent1"><i class="fas fa-bolt"></i> Sub-Sec Token Gen (Groq)</div>
+                        <div class="metric-chip metric-accent2"><i class="fas fa-shield-alt"></i> Anti-Hallucination Guardrails</div>
+                        <div class="metric-chip metric-accent1"><i class="fas fa-file-invoice"></i> Page-Level Citations</div>
+                        <div class="metric-chip metric-accent2"><i class="fas fa-database"></i> FAISS + Staleness Detection</div>
+                        <div class="metric-chip metric-accent1"><i class="fas fa-sliders-h"></i> Dynamic Context (k) Slider</div>
+                    </div>
+                    <div class="skill-tags" style="margin: 1.2rem 0;">
+                        <span><i class="fab fa-python"></i> Python</span>
+                        <span><i class="fas fa-project-diagram"></i> LangChain</span>
+                        <span><i class="fas fa-bolt"></i> Groq LPU</span>
+                        <span><i class="fas fa-database"></i> FAISS</span>
+                        <span><i class="fas fa-brain"></i> HuggingFace</span>
+                        <span><i class="fas fa-desktop"></i> Streamlit</span>
+                    </div>
+                    <a href="https://github.com/Lucifer2987/Docsy" target="_blank" rel="noopener noreferrer"
+                        class="btn secondary-btn" style="font-size: 0.9rem; padding: 0.6rem 1.2rem;">View Project <i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project-card glass-card glow-on-hover reveal">
+                <div class="project-content">
+                    <h3>🏛️ Athena AI — Autonomous Building Energy Management</h3>
+                    <p>Closed-loop, AI-driven Building Energy Management System (BEMS) coupling live EnergyPlus simulations with a local Qwen2.5 7B LLM reasoning engine via Model Context Protocol (MCP) to autonomously optimize HVAC energy consumption while guaranteeing 100% occupant thermal comfort.</p>
+                    <div class="project-metrics">
+                        <div class="metric-chip metric-live"><i class="fas fa-leaf"></i> 94.4% Energy Reduction</div>
+                        <div class="metric-chip metric-accent1"><i class="fas fa-smile"></i> 100.0% PMV Comfort Adherence</div>
+                        <div class="metric-chip metric-accent2"><i class="fas fa-tachometer-alt"></i> +3.2% Control Reward Gain</div>
+                        <div class="metric-chip metric-accent1"><i class="fas fa-robot"></i> 0.93 Avg AI Confidence</div>
+                        <div class="metric-chip metric-accent2"><i class="fas fa-building"></i> EnergyPlus API v24/25</div>
+                        <div class="metric-chip metric-accent1"><i class="fas fa-shield-alt"></i> Hard Safety Constraints</div>
+                    </div>
+                    <div class="skill-tags" style="margin: 1.2rem 0;">
+                        <span><i class="fab fa-python"></i> Python 3.10+</span>
+                        <span><i class="fas fa-temperature-low"></i> EnergyPlus API</span>
+                        <span><i class="fas fa-brain"></i> Qwen2.5 (Ollama)</span>
+                        <span><i class="fas fa-network-wired"></i> MCP Protocol</span>
+                        <span><i class="fas fa-chart-area"></i> Streamlit & Plotly</span>
+                    </div>
+                    <a href="https://github.com/Lucifer2987/Athena-AI" target="_blank" rel="noopener noreferrer"
+                        class="btn secondary-btn" style="font-size: 0.9rem; padding: 0.6rem 1.2rem;">View Project <i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project-card glass-card glow-on-hover reveal">
+                <div class="project-content">
+                    <h3>🏙️ NagrikAI — Civic Complaint Intelligence System</h3>
+                    <p>AI civic intelligence pipeline converting unstructured citizen complaints (text + OCR image extraction) into structured, prioritized municipal work orders. Employs TypeSafe Jev & RLCD calibration for department classification, 4-tier urgency scoring, public safety hazard boosts, and ward geocoding.</p>
+                    <div class="project-metrics">
+                        <div class="metric-chip metric-live"><i class="fas fa-brain"></i> TypeSafe Jev / RLCD Calibration</div>
+                        <div class="metric-chip metric-accent1"><i class="fas fa-camera"></i> OCR Image-to-Text Pipeline</div>
+                        <div class="metric-chip metric-accent2"><i class="fas fa-exclamation-triangle"></i> 4-Level Urgency + Hazard Boost</div>
+                        <div class="metric-chip metric-accent1"><i class="fas fa-clone"></i> Duplicate Detection</div>
+                        <div class="metric-chip metric-accent2"><i class="fas fa-map-marked-alt"></i> Ward Geocoding</div>
+                        <div class="metric-chip metric-accent1"><i class="fas fa-users-cog"></i> Human Review Queue</div>
+                    </div>
+                    <div class="skill-tags" style="margin: 1.2rem 0;">
+                        <span><i class="fab fa-python"></i> Python</span>
+                        <span><i class="fas fa-brain"></i> TypeSafe Jev (RLCD)</span>
+                        <span><i class="fas fa-file-alt"></i> OCR</span>
+                        <span><i class="fas fa-server"></i> FastAPI</span>
+                        <span><i class="fas fa-map-pin"></i> Geocoding</span>
                         <span><i class="fas fa-balance-scale"></i> MIT License</span>
                     </div>
-                    <a href="https://github.com/Lucifer2987/Multi_Class_Animal_Classification.git"
+                    <a href="https://github.com/Lucifer2987/NagrikAI" target="_blank" rel="noopener noreferrer"
                         class="btn secondary-btn" style="font-size: 0.9rem; padding: 0.6rem 1.2rem;">View Project <i
                             class="fab fa-github"></i></a>
                 </div>
@@ -236,7 +301,7 @@
                         <span><i class="fas fa-cogs"></i> Scikit-learn</span>
                         <span><i class="fas fa-balance-scale"></i> MIT License</span>
                     </div>
-                    <a href="https://github.com/Lucifer2987/Breast-Cancer-Classification-with-Neural-Network." class="btn secondary-btn"
+                    <a href="https://github.com/Lucifer2987/Breast-Cancer-Classification-with-Neural-Network." target="_blank" rel="noopener noreferrer" class="btn secondary-btn"
                         style="font-size: 0.9rem; padding: 0.6rem 1.2rem;">View Project <i
                             class="fab fa-github"></i></a>
                 </div>
@@ -260,7 +325,28 @@
                         <span><i class="fas fa-network-wired"></i> TensorFlow</span>
                         <span><i class="fas fa-balance-scale"></i> MIT License</span>
                     </div>
-                    <a href="https://github.com/Lucifer2987/Traffic-Demand-Prediction-Engine-.git"
+                    <a href="https://github.com/Lucifer2987/Traffic-Demand-Prediction-Engine-.git" target="_blank" rel="noopener noreferrer"
+                        class="btn secondary-btn" style="font-size: 0.9rem; padding: 0.6rem 1.2rem;">View Project <i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project-card glass-card glow-on-hover reveal">
+                <div class="project-content">
+                    <h3>🐾 Multi-Class Animal Classification</h3>
+                    <p>Computer vision machine learning system classifying diverse animal species using convolutional neural networks, automated data augmentations, and soft-voting probability distributions.</p>
+                    <div class="project-metrics">
+                        <div class="metric-chip metric-accent1"><i class="fas fa-paw"></i> Multi-Class CNN</div>
+                        <div class="metric-chip metric-accent2"><i class="fas fa-images"></i> Image Augmentation</div>
+                        <div class="metric-chip metric-accent1"><i class="fas fa-layer-group"></i> Feature Extraction</div>
+                        <div class="metric-chip metric-accent2"><i class="fas fa-chart-pie"></i> Softmax Cross-Entropy</div>
+                    </div>
+                    <div class="skill-tags" style="margin: 1.2rem 0;">
+                        <span><i class="fab fa-python"></i> Python</span>
+                        <span><i class="fas fa-eye"></i> OpenCV</span>
+                        <span><i class="fas fa-book-reader"></i> Jupyter</span>
+                        <span><i class="fas fa-balance-scale"></i> MIT License</span>
+                    </div>
+                    <a href="https://github.com/Lucifer2987/Multi_Class_Animal_Classification.git" target="_blank" rel="noopener noreferrer"
                         class="btn secondary-btn" style="font-size: 0.9rem; padding: 0.6rem 1.2rem;">View Project <i
                             class="fab fa-github"></i></a>
                 </div>
